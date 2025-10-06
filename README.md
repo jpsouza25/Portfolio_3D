@@ -18,10 +18,10 @@ Portfólio pessoal de **João Pedro**, estudante de Ciência da Computação e d
 ## Instruções para rodar localmente
 
 # Clone o repositório
-git clone https://github.com/seu_usuario/portfolio-joaopedro.git
+git clone [https://github.com/seu_usuario/portfolio-joaopedro.git](https://github.com/jpsouza25/Portfolio_3D.git)
 
 # Entre na pasta do projeto
-cd portfolio-joaopedro
+cd Portfolio_3D-main
 
 # Instale as dependências
 npm install
