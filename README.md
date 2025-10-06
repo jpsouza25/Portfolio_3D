@@ -1,4 +1,6 @@
 # Portfolio_3D
+![Capa do Portfólio](textures/capa.png)
+
 # Portfólio João Pedro
 
 Portfólio pessoal de **João Pedro**, estudante de Ciência da Computação e desenvolvedor de software. O projeto apresenta minhas habilidades, experiências e contatos de forma moderna e interativa.
