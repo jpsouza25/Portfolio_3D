@@ -1,5 +1,5 @@
 # Portfolio_3D
-![Capa do Portfólio](textures/capa.png)
+![Capa do Portfólio](public/textures/capa.png)
 
 # Portfólio João Pedro
 
