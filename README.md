@@ -20,9 +20,6 @@ Portfólio pessoal de **João Pedro**, estudante de Ciência da Computação e d
 # Clone o repositório
 git clone https://github.com/jpsouza25/Portfolio_3D.git
 
-# Entre na pasta do projeto
-cd Portfolio_3D-main
-
 # Instale as dependências
 npm install
 
