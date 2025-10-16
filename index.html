@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
   <meta name='viewport'
     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui' />
   <title>Portfolio</title>
@@ -14,7 +14,6 @@
     <canvas class="experience-canvas"></canvas>
   </div>
 
-  <!-- Preloader -->
   <div class="preloader">
     <div class="preloader-wrapper">
       <div class="loading">
@@ -49,7 +48,6 @@
       <section class="hero">
         <div class="hero-wrapper">
 
-          <!-- Intro Stuff -->
           <div class="intro-text">Seja bem vindo ao meu Portfolio</div>
           <div class="arrow-svg-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
@@ -98,10 +96,6 @@
           <p class="section-text">Sou motivado por desafios que me permitem aprender continuamente e aplicar meus
             conhecimentos em projetos práticos. Meu objetivo é evoluir como desenvolvedor e contribuir para soluções
             inovadoras que conectem tecnologia, design e experiência do usuário.</p>
-          <!-- <h3 class="section-heading">Lorem Ipsum</h3>
-            <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita qui quae officiis, magni velit iste repellat consequuntur temporibus. Quasi atque officia iste beatae rerum, harum itaque accusamus. At, natus?</p> -->
-          <!-- <h3 class="section-heading">Lorem Ipsum</h3>
-            <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita qui quae officiis, magni velit iste repellat consequuntur temporibus. Quasi atque officia iste beatae rerum, harum itaque accusamus. At, natus?</p> -->
         </div>
       </section>
 
@@ -122,39 +116,58 @@
           <span class="section-number blue-text">02</span>
         </div>
 
-        <div class="section-detail-wrapper skills-grid">
-          <h3 class="section-heading">Frameworks</h3>
-          <p class="section-text">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="30"
+        <!-- === HABILIDADES === -->
+        <div class="section-detail-wrapper skills-grid skill-frameworks">
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
               alt="Angular" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="30"
+            <span>Angular</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
               alt="Spring Boot" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="30"
-              alt="Node.js" />
-          </p>
+            <span>Spring Boot</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <span>Node.js</span>
+          </div>
 
-          <h3 class="section-heading">Linguagens</h3>
-          <p class="section-text">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="30"
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="JavaScript" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="30"
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
               alt="TypeScript" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="30"
-              alt="Java" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30"
-              alt="Python" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="30"
-              alt="SQL" />
-          </p>
+            <span>TypeScript</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <span>Java</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+            <span>MySQL</span>
+          </div>
 
-          <h3 class="section-heading">Outros</h3>
-          <p class="section-text">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="30" alt="Git" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="30"
-              alt="HTML5" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="30"
-              alt="CSS3" />
-          </p>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <span>HTML5</span>
+          </div>
+          <div class="skill-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <span>CSS3</span>
+          </div>
         </div>
       </section>
 
@@ -176,30 +189,17 @@
         </div>
 
         <div class="section-detail-wrapper contact-grid">
-          <h3 class="section-heading">Minhas Redes</h3>
-
-          <p>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jpsc200508@email.com" target="_blank">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="35" alt="gmail" />
-            </a>
-          </p>
-
-          <p>
-            <a href="https://www.instagram.com/joaoo_psc" target="_blank">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" width="35" alt="Instagram" />
-            </a>
-          </p>
-
-          <p>
-            <a href="https://github.com/jpsouza25" target="_blank">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="35" alt="GitHub" />
-            </a>
-          </p>
-          <p>
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="35" alt="LinkedIn" />
-            ⚠️ em reforma
-          </p>
-
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jpsc200508@email.com" target="_blank"
+            class="contact-item gmail" data-label="Gmail">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="gmail" />
+          </a>
+          <a href="https://www.instagram.com/joaoo_psc" target="_blank" class="contact-item instagram"
+            data-label="Instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://github.com/jpsouza25" target="_blank" class="contact-item github" data-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" />
+          </a>
         </div>
       </section>
 

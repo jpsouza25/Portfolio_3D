@@ -443,6 +443,214 @@ svg{
 }
 
 
+.skills-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.skill-badge,
+.contact-item {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: none;
+  position: relative; 
+}
+
+.skill-badge img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-badge span {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.contact-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-item img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(1) brightness(0.28) contrast(0.9);
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+/* legenda (tooltip) */
+.contact-item::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #222; /* texto escuro no tema claro */
+  opacity: 0;
+  transition: opacity 0.3s ease, color 0.25s ease;
+}
+
+.contact-item:hover::after {
+  opacity: 1;
+}
+
+/* === Tema CLARO === */
+body.light-theme .contact-item {
+  background: rgba(255, 255, 255, 0.01);
+  border: 2px solid rgba(0, 0, 0, 0.85); /* borda preta */
+  box-shadow: none;
+}
+
+body.light-theme .contact-item img {
+  filter: grayscale(1) brightness(0.28) contrast(0.9); /* ícone escuro */
+}
+
+/* HOVER no modo claro — igual ao tema escuro */
+body.light-theme .contact-item:hover,
+body.light-theme .contact-item:focus {
+  transform: scale(1.1);
+  border-color: transparent;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+/* ícone volta ao normal no hover */
+body.light-theme .contact-item:hover img {
+  filter: none;
+  transform: scale(1.05);
+}
+
+/* tooltip branco no hover */
+body.light-theme .contact-item:hover::after {
+  color: #fff;
+}
+
+/* === CORES PERSONALIZADAS NO HOVER (modo claro) === */
+body.light-theme .contact-item.gmail:hover {
+  background: #ea4335;
+  box-shadow: 0 0 20px rgba(234,67,53,0.5);
+}
+
+body.light-theme .contact-item.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0 0 20px rgba(253,89,73,0.6);
+}
+
+body.light-theme .contact-item.github:hover {
+  background: #24292e;
+  box-shadow: 0 0 20px rgba(36,41,46,0.5);
+}
+
+/* === Mantém estilos das skill-badges no tema claro === */
+body.light-theme .skill-badge {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: #333;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .skill-badge:hover {
+  transform: translateY(-4px);
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .skill-badge span .contact-item::after {
+  color: #222;
+}
+
+/* === ESTILO COLORIDO APENAS NO MODO ESCURO === */
+@media (prefers-color-scheme: dark) {
+  .skill-badge {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+
+  .skill-badge:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 150, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .skill-badge img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .skill-badge:hover img {
+    transform: scale(1.15) rotate(3deg);
+    filter: drop-shadow(0 0 8px rgba(0, 150, 255, 0.7));
+  }
+
+  .skill-badge span {
+    color: #fff;
+  }
+
+  /* contatos modo escuro */
+  .contact-item {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+  }
+
+  .contact-item img {
+    filter: invert(1);
+  }
+
+  .contact-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.25);
+  }
+
+  .contact-item:hover img {
+    transform: rotate(10deg) scale(1.1);
+  }
+
+  /* cores personalizadas */
+  .contact-item.gmail:hover {
+    background: #ea4335;
+    box-shadow: 0 0 20px rgba(234,67,53,0.5);
+  }
+
+  .contact-item.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0 0 20px rgba(253,89,73,0.6);
+  }
+
+  .contact-item.github:hover {
+    background: #24292e;
+    box-shadow: 0 0 20px rgba(36,41,46,0.5);
+  }
+
+  .contact-item::after {
+    color: #fff;
+  }
+}
+
+
 /* Media Queries */
 
 @media (max-width: 968px){
